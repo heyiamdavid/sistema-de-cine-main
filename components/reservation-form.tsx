@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label"
 import { Calendar, Clock, Film, Mail, User } from "lucide-react"
 import { supabase } from "@/src/supabaseClient"
 
+// Prop para recibir el ID de la película desde /reserve/[id]
 interface ReservationFormProps {
   movieId?: string
 }
@@ -18,6 +19,7 @@ export function ReservationForm({ movieId }: ReservationFormProps) {
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
 
+  // Función para guardar reserva
   const handleReserve = async () => {
     if (!name || !email) {
       alert("Por favor completa todos los campos.")
@@ -65,6 +67,7 @@ export function ReservationForm({ movieId }: ReservationFormProps) {
       </CardHeader>
 
       <CardContent className="space-y-6">
+        {/* 🔹 Datos de la película (puedes conectar con Supabase luego) */}
         <div className="space-y-4">
           <div className="flex items-start gap-3">
             <Film className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
@@ -93,6 +96,7 @@ export function ReservationForm({ movieId }: ReservationFormProps) {
           </div>
         </div>
 
+        {/* 🔹 Datos del estudiante */}
         <div className="border-t border-border/50 pt-6 space-y-4">
           <h3 className="font-semibold text-foreground">Información del Estudiante</h3>
 
@@ -129,6 +133,7 @@ export function ReservationForm({ movieId }: ReservationFormProps) {
           </div>
         </div>
 
+        {/* 🔹 Botón de acción */}
         <Button
           onClick={handleReserve}
           disabled={loading}
@@ -137,6 +142,7 @@ export function ReservationForm({ movieId }: ReservationFormProps) {
           {loading ? "Guardando..." : "Confirmar Reserva"}
         </Button>
 
+        {/* 🔹 Mensaje final */}
         {success && (
           <p className="text-sm text-green-500 text-center font-medium">
             Reserva confirmada con éxito.
