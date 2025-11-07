@@ -26,8 +26,8 @@ export function ReservationForm({ movieId }: ReservationFormProps) {
       return
     }
 
-    if (!email.endsWith("@uleam.edu.ec")) {
-      alert("Debes usar tu correo institucional (@uleam.edu.ec)")
+    if (!email.endsWith("e(cedula)@live.uleam.edu.ec")) {
+      alert("Debes usar tu correo institucional (e(cedula)@live.uleam.edu.ec)")
       return
     }
 
