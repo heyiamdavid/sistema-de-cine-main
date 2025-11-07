@@ -6,6 +6,10 @@ import { Badge } from "@/components/ui/badge"
 import { Monitor } from "lucide-react"
 import { cn } from "@/lib/utils"
 
+interface SeatSelectionProps {
+  movieId?: string
+}
+
 const rows = ["A", "B", "C", "D", "E", "F", "G", "H"]
 const seatsPerRow = 10
 
@@ -26,7 +30,7 @@ const generateSeats = () => {
   return seats
 }
 
-export function SeatSelection() {
+export function SeatSelection({ movieId }: SeatSelectionProps) {
   const [seats] = useState(generateSeats())
   const [selectedSeats, setSelectedSeats] = useState<string[]>([])
 
