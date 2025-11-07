@@ -1,7 +1,7 @@
 import qrcode
 from PIL import Image, ImageDraw
 
-texto = "https://cine_uleam.com"
+texto = "https://sistema-de-cine-main.vercel.app/"
 qr = qrcode.QRCode(
     version=6,  
     error_correction=qrcode.constants.ERROR_CORRECT_H,
@@ -23,6 +23,6 @@ draw.rectangle(
     fill="white"
 )
 qr_img.paste(logo, pos, mask=logo if logo.mode == "RGBA" else None)
-qr_img.save("assets/qr_generados/qr_logo_generado.png")
+qr_img.save("assets/qr_logo_generado.png")
 
 

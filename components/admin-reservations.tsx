@@ -10,7 +10,7 @@ const reservations = [
   {
     id: "RES-001",
     name: "María González",
-    email: "maria.gonzalez@universidad.edu",
+    email: "e54859565@live.uleam.edu.ec",
     movie: "Amélie",
     date: "Vie 8 Nov",
     time: "19:30",
@@ -20,7 +20,7 @@ const reservations = [
   {
     id: "RES-002",
     name: "Carlos Ramírez",
-    email: "carlos.ramirez@universidad.edu",
+    email: "1212121212@live.uleam.edu.ec",
     movie: "Parasite",
     date: "Sáb 9 Nov",
     time: "20:45",
@@ -30,7 +30,7 @@ const reservations = [
   {
     id: "RES-003",
     name: "Ana Martínez",
-    email: "ana.martinez@universidad.edu",
+    email: "e5454545454@live.uleam.edu.ec",
     movie: "Cinema Paradiso",
     date: "Lun 11 Nov",
     time: "19:00",
