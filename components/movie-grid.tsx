@@ -62,7 +62,7 @@ export function MovieGrid() {
                   genre: movie.genero,
                   duration: `${movie.duracion_min} min`,
                   rating: movie.clasificacion,
-                  showtimes: ["17:00", "19:00"], // luego lo conectaremos con la tabla 'funciones'
+                  showtimes: ["17:00", "19:00"],
                   date: "Semana actual",
                   image: movie.imagen_url || "/placeholder.svg",
                   director: movie.descripcion || "Sin director registrado",
