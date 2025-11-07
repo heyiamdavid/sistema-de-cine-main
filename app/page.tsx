@@ -1,12 +1,14 @@
 import { Header } from "@/components/header"
+import { Hero } from "@/components/hero"
+import { MovieGrid } from "@/components/movie-grid"
 import { Footer } from "@/components/footer"
-import { AboutSection } from "@/components/about-section"
 
-export default function AboutPage() {
+export default function Home() {
   return (
     <div className="min-h-screen">
       <Header />
-      <AboutSection />
+      <Hero />
+      <MovieGrid />
       <Footer />
     </div>
   )
