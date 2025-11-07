@@ -16,7 +16,7 @@ export default function AdminPage() {
             </div>
             <div>
               <h1 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Panel de Administración</h1>
-              <p className="text-muted-foreground">Gestiona películas, funciones y reservas del CineClub</p>
+              <p className="text-muted-foreground">Gestiona películas, funciones y reservas del CineULEAM</p>
             </div>
           </div>
 
