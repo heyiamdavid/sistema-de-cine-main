@@ -37,17 +37,17 @@ export function AdminQRScanner() {
               {
                 name: "María González",
                 movie: "Amélie",
-                time: "Hace 2 min",
+                time: "Hace 2 hora(s)",
               },
               {
                 name: "Carlos Ramírez",
                 movie: "Parasite",
-                time: "Hace 5 min",
+                time: "Hace 2 hora(s)",
               },
               {
                 name: "Ana Martínez",
                 movie: "Cinema Paradiso",
-                time: "Hace 8 min",
+                time: "Hace 30 min",
               },
             ].map((entry, index) => (
               <div key={index} className="flex items-center gap-3 p-3 rounded-lg bg-background border border-border/50">
